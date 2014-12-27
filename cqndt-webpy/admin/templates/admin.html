@@ -1,0 +1,13 @@
+$def with (posts)	
+
+<h1>后台管理</h1>
+
+<ul>
+$for post in posts:
+	<li>
+		<a href="/view/$post.id">$post.title</a>
+		from $datestr(post.posted_on)   
+		<a href="/edit/$post.id">Edit</a>
+	</li>
+
+</ul>
