@@ -1,0 +1,12 @@
+$def with (posts) 
+<h1>About</h1>
+<a href="/admin/about/new">Add</a>
+<ul>
+$for post in posts:
+	<li>
+		<a href = "/admin/about/view/$post.id">$post.title</a>
+		<a href = "/admin/about/edit/$post.id">Edit</a>
+		<a href = "/admin/about/delete/$post.id">Delete</a>
+
+	</li>
+</ul>

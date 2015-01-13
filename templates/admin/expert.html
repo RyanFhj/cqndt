@@ -1,0 +1,12 @@
+$def with (posts)
+<h1>Expert List</h1>
+<a href='/admin/expert/new'>Add New Expert</a>
+<ul>
+$for post in posts:
+	<li>
+		<a href = "/admin/expert/view/$post.id">$post.name</a>
+		<a href = "/admin/expert/edit/$post.id">Edit</a>
+		<a href = "/admin/expert/delete/$post.id">Delete</a>
+	</li>
+
+</ul>

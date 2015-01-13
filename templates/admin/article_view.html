@@ -1,0 +1,19 @@
+$def with (posts)
+<h1>Article View</h1>
+<ul>
+	<li>Title:$posts[0].title</li>
+	<li>Author:$posts[0].author</li>
+	<li>Content:$posts[0].content</li>
+	<li>Img:<img src="$posts[0].img"></li>
+	<li>Date:$posts[0].date</li>
+</ul>
+
+<h3>Comment</h3>
+<ul>
+$for comment in posts:
+	$if comment.c_id:
+		<li>$comment.c_content|$comment.c_author|$comment.c_date<a href="/admin/comment/delete/$comment.c_id">Delete</a></li>
+	$else:
+		<li>No comment</li>
+</ul>
+	

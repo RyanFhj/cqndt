@@ -1,0 +1,11 @@
+$def with (posts)
+<h1>Categroy List</h1>
+<a href="/admin/category/new">Add Categroy</a>
+<ul>
+$for post in posts:
+	<li>
+		<a href="/admin/category/edit/$post.id">$post.title</a>
+		Article Num:$post.num
+		<a href="/admin/category/delete/$post.id">Delete</a>
+	</li>
+</ul>

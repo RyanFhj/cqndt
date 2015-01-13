@@ -1,0 +1,22 @@
+$def with (post)
+
+<h1>Edit $post.title</h1>
+
+<form action ="" method="post">
+
+Title : <input type="text" name="title" value="$post.title"> <br/>
+Content: <textarea rows="10" cols="20" name="content" >$post.content</textarea> <br/>
+PhoneNum: <input type="text" name="phonenum" value="$post.phonenum"> <br />
+E-Mail: <input type="text" name="email" value="$post.email"> <br/>
+Address: <input type="text" name="address" value="$post.address"> <br/>
+Map-IMG: <input type="text" name="img" value="$post.img"> <br/>
+<input type="submit"  value="Submit">
+
+</form>
+
+<h2>Delete post</h2>
+
+<form action="/admin/about/delete/$post.id" method="post">
+	<input type="submit" value="Delete post" />
+</form>
+<a href="/admin/about">About List</a>

@@ -1,0 +1,9 @@
+$def with (posts)
+<h1>Orgnization</h1>
+
+<ul>
+$for post in posts:
+	<li>$post.title</li>
+	<li><img src='$post.org_img'></li>
+	<a href="/admin/orgnization/edit/$post.id">Edit</a>
+</ul>

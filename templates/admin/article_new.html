@@ -1,0 +1,17 @@
+$def with (c_posts)
+
+<h1>New Article</h1>
+<form method="POST">
+<ul>
+	Title:<input type="text" name="title"><br/>
+	Category:<select name="category">
+	$for c_post in c_posts:
+		<option value="$c_post.id">$c_post.title</option>
+	</select><br/>
+	Content:<input type="text" name="content" ><br/>
+	Author:<input type="text" name="author" ><br/>
+	Img:<input type="text" name="img" ><br/>
+	Date:<input type="text" name="date"><br/>
+	<input type="submit" value="Add">
+</ul>
+</form>

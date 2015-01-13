@@ -1,0 +1,11 @@
+$def with (post)
+<h1>Expert Edit</h1>
+<form method="POST" action="">
+	Name : <input type="text" name="name" value="$post.name"> <br />
+	Title : <input type="text" name="title" value="$post.title"> <br />
+	Intro : <textarea name="intro" cols="10" rows="5">$post.intro</textarea> <br/>
+	Work Experience : <textarea name="work_exp" cols="20" rows="7">$post.work_exp</textarea> <br/>
+	Honor Adword : <textarea name="honor" cols="15" rows="6">$post.honor</textarea> <br />
+	Img : <input type ="text" name="img" value="$post.img"> <br />
+	<input type="submit" value="Edit">
+</form>

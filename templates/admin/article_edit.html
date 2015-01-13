@@ -1,0 +1,20 @@
+$def with (posts,c_posts)
+<h1>Article Edit</h1>
+
+<form method="POST">
+<ul>
+$for post in posts:
+	Title:<input type="text" name="title" value="$post.title"><br/>
+	Category:<select name="category">
+	$for c_post in c_posts:
+		<option value="$c_post.id">$c_post.title</option>
+			$if post.c_id == c_post.id:
+			<option value="$c_post.id" selected="selected">$c_post.title</option>
+	</select><br/>
+	Content:<input type="text" name="content" value="$post.content"><br/>
+	Author:<input type="text" name="author" value="$post.author"><br/>
+	Img:<input type="text" name="img" value="$post.img"><br/>
+	Date:<input type="text" name="date" value="$post.date"><br/>
+	<input type="submit" value="Edit">
+</ul>
+</form>

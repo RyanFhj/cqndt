@@ -1,0 +1,29 @@
+$def with (page)
+
+<html>
+	<head>
+		<title>My admin</title>
+		<style>
+			#menu{
+				width:200px;
+				float:left;
+				height:100%;
+			}
+		</style>
+	</head>
+	
+	
+	<body>
+	<h1>后台管理</h1>
+		<ul id="menu">
+			<li><a href="/admin">Home</a></li>
+			<li><a href="/admin/about">About</a></li>
+			<li><a href="/admin/orgnization">Orgnization</a></li>
+			<li><a href="/admin/expert">Expert</a></li>
+			<li><a href="/admin/category">Category</a></li>
+			<li><a href="/admin/article">Article</a></li>
+		</ul>
+	$:page
+	
+	</body>
+</html>
