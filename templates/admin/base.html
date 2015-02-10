@@ -2,6 +2,9 @@ $def with (page)
 
 <html>
 	<head>
+		<link rel="stylesheet" href="$static/css/uikit.min.css">
+    <script src="$static/js/jquery.js"></script>
+    <script src="$static/js/uikit.min.js"></script>
 		<title>My admin</title>
 		<style>
 			#menu{
@@ -22,7 +25,10 @@ $def with (page)
 			<li><a href="/admin/expert">Expert</a></li>
 			<li><a href="/admin/category">Category</a></li>
 			<li><a href="/admin/article">Article</a></li>
+			<li><a href="/admin/notice">Notice</a></li>
+			<li><a href="/admin/logout">Logout</a></li>
 		</ul>
+		
 	$:page
 	
 	</body>

@@ -1,0 +1,13 @@
+$def with (posts)
+<h1>Notice</h1>
+<a href="/admin/notice/add">Add</a>
+<ul>
+$for post in posts:
+	<li>
+		<a href ="/admin/notice/view/$post.id">$post.title</a>
+		<a href ="/admin/notice/edit/$post.id">Edit</a>
+		<a href ="/admin/notice/delete/$post.id">Delete</a>
+
+	</li>	
+
+</ul>

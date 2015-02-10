@@ -1,0 +1,394 @@
+$def with (page)
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>重庆无损检测学会</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- @todo: fill with your company info or remove -->
+<meta name="description" content="">
+<meta name="author" content="Themelize.me">
+
+<!-- Bootstrap CSS -->
+<link href="$static/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link href="$static/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Plugins -->
+<link href="$static/plugins/prism/prism.css" media="screen" rel="stylesheet" />
+<link href="$static/plugins/slider-revolution/rs-plugin/css/settings.css?v=4.2" media="screen" rel="stylesheet" />
+<link href="$static/plugins/animate/animate.css" rel="stylesheet">
+<link href="$static/plugins/flexslider/flexslider.css" rel="stylesheet">
+<link href="$static/plugins/clingify/clingify.css" rel="stylesheet">
+
+<!-- Theme style -->
+<link href="$static/css/theme-style.min.css" rel="stylesheet">
+
+<!--Your custom colour override-->
+<link href="#" id="colour-scheme" rel="stylesheet">
+
+<!-- Your custom override -->
+<link href="$static/css/custom-style.css" rel="stylesheet">
+
+<!-- HTML5 shiv & respond.js for IE6-8 support of HTML5 elements & media queries -->
+<!--[if lt IE 9]>
+  <script src="plugins/html5shiv/dist/html5shiv.js"></script>
+  <script src="plugins/respond/respond.min.js"></script>
+<![endif]-->
+
+<!-- Le fav and touch icons - @todo: fill with your icons or remove -->
+<link rel="shortcut icon" href="$static/img/icons/favicon.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="$static/img/icons/114x114.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="$static/img/icons/72x72.png">
+<link rel="apple-touch-icon-precomposed" href="$static/img/icons/default.png">
+
+<!--Retina.js plugin - @see: http://retinajs.com/-->
+<script src="$static/plugins/retina/js/retina-1.1.0.min.js"></script>
+</head>
+
+<body class="page page-about">
+<a href="#content" class="sr-only">Skip to content</a>
+<div id="navigation" class="wrapper">
+<div class="navbar-static-top">
+
+  <!--Hidden Header Region-->
+  <div class="header-hidden">
+    <div class="header-hidden-inner container">
+      <div class="row">
+        <div class="col-sm-4 col-md-4">
+          <h3 style="font-family:'微软雅黑'">联系我们</h3>
+        <address>
+          <ul class="fa-ul">
+            <li>
+              <abbr title="Phone">
+                <i class="fa fa-li fa-phone"></i>
+              </abbr>86 023 66666666</li>
+            <li>
+              <abbr title="Email">
+                <i class="fa fa-li fa-envelope"></i>
+              </abbr>service@cqndt.org</li>
+            <li style="font-family:'微软雅黑'">
+              <abbr title="Address">
+                <i class="fa fa-li fa-home"></i>
+              </abbr>重庆市沙坪坝正街174号</li>
+          </ul>
+        </address>
+        </div>
+        <div class="col-sm-4 col-md-4">
+          
+        </div>
+        <div class="col-sm-4 col-md-4">
+          <!--Colour Switch for demo - @todo: remove in production-->
+          <div class="colour-switcher">
+            <h3>页面主题颜色</h3>
+            <a href="#green" class="green active" data-toggle="tooltip" data-placement="bottom" data-original-title="绿 (默认)">绿</a>
+            <a href="#red" class="red" data-toggle="tooltip" data-placement="bottom" data-original-title="红">红</a>
+            <a href="#blue" class="blue" data-toggle="tooltip" data-placement="bottom" data-original-title="蓝">蓝</a>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Header & Branding region-->
+  <div class="header">
+    <div class="header-inner container">
+      <div class="row">
+        <div class="col-md-8">
+          <!--branding/logo-->
+          <a class="navbar-brand" href="/index" title="Home">
+            <h1 >
+              <span >学会</span>LOGO
+              <span>.</span>
+            </h1>
+          </a>
+          <div class="slogan">www.cqndt.org</div>
+        </div>
+
+        <!--header rightside-->
+        <div class="col-md-4">
+          <!--social media icons-->
+          <div class="social-media">
+            <!--@todo: replace with company social media details-->
+            <a href="#">
+              <i class="fa fa-weibo" data-toggle="tooltip" data-placement="bottom" data-original-title="新浪微博"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-renren" data-toggle="tooltip" data-placement="bottom" data-original-title="人人网"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-comments" data-toggle="tooltip" data-placement="bottom" data-original-title="微信公众号"></i>
+            </a>
+            <a href="#">
+              <i class="fa fa-envelope" data-toggle="tooltip" data-placement="bottom" data-original-title="电子邮件"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="header-hidden-link">
+        <a href="#" title="点击我" class="show-hide" data-toggle="show-hide" data-target=".header-hidden">
+          <i></i>Open</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" data-toggle="clingify">
+    <div class="navbar">
+      <!--
+  mobile collapse menu button
+  - data-toggle="toggle" = default BS menu
+  - data-toggle="jpanel-menu" = jPanel Menu
+  -->
+      <a class="navbar-btn" data-toggle="jpanel-menu" data-target=".navbar-collapse">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+
+      <!--user menu-->
+      <div class="btn-group user-menu pull-right">
+        <a href="#signup-modal" class="btn btn-primary signup" data-toggle="modal">注册</a>
+        <a href="#login-modal" class="btn btn-primary dropdown-toggle login" data-toggle="modal">登陆</a>
+      </div>
+
+      <!--everything within this div is collapsed on mobile-->
+      <div class="navbar-collapse collapse">
+
+        <!--main navigation-->
+        <ul class="nav navbar-nav">
+          <li class="home-link">
+            <a href="/index">
+              <i class="fa fa-home"></i>
+              <span class="hidden">首页</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="/index/about" class="dropdown-toggle" data-toggle="dropdown">关于学会 +</a>
+            <ul class="dropdown-menu" role="menu" arip-lableledby="about-drop">
+              <li role="presentation">
+                <a role="menuitem" href="/index/about" tabindex="-1" class="menu-item">学会简介</a>
+              </li>
+              <li role="presentation">
+                <a role="menuitem" href="/index/organization" tabindex="-1" class="menu-item">学会架构</a>
+              </li>
+              <li role="presentation">
+                <a role="menuitem" href="/index/expert" tabindex="-1" class="menu-item">学会专家</a>
+              </li>
+              <li role="presentation">
+                <a role="menuitem" href="/index/contact" tabindex="-1" class="menu-item">联系我们</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="/index/news" class="menu-item">新闻动态</a>
+          </li>
+          <li class="dropdown">
+            <a href="about.htm" class="dropdown-toggle" id="about-drop" data-toggle="dropdown">培训中心 +</a>
+            <!-- Dropdown Menu -->
+            <ul class="dropdown-menu" role="menu" aria-labelledby="about-drop">
+              <li role="presentation">
+                <a role="menuitem" href="/index/notice" tabindex="-1" class="menu-item">培训通知</a>
+              </li>
+              <li role="presentation">
+                <a role="menuitem" href="/index/process" tabindex="-1" class="menu-item">报名程序</a>
+              </li>
+              <li role="presentation">
+                <a role="menuitem" href="/index/table_download" tabindex="-1" class="menu-item">表格下载</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="blog.htm" class="dropdown-toggle" id="blog-drop" data-toggle="dropdown">会员功能</a>
+          </li>
+          
+        </ul>
+      </div>
+      <!--/.navbar-collapse -->
+    </div>
+  </div>
+ </div>
+</div>
+
+$:page
+<!-- FOOTER -->
+<footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col">
+          <div class="block contact-block">
+            <!--@todo: replace with company contact details-->
+            <h3 style="font-family:'微软雅黑'">联系我们</h3>
+            <address>
+              <ul class="fa-ul">
+                <li>
+                  <abbr title="Phone">
+                    <i class="fa fa-li fa-phone"></i>
+                  </abbr>86 023 66666666</li>
+                <li>
+                  <abbr title="Email">
+                    <i class="fa fa-li fa-envelope"></i>
+                  </abbr>service@cqndt.org</li>
+                <li style="font-family:'微软雅黑'">
+                  <abbr title="Address">
+                    <i class="fa fa-li fa-home"></i>
+                  </abbr>重庆市沙坪坝正街174号</li>
+              </ul>
+            </address>
+          </div>
+        </div>
+        <div class="col-md-5 col">
+          
+        </div>
+        <div class="col-md-4 col">
+          <div class="block newsletter">
+            <h3 style="font-family:'微软雅黑'">最新资讯</h3>
+            <p style="font-family:'微软雅黑'">留下您常用的电子邮箱以便我们能向您发送无损检测学会的最新资讯</p>
+            <!--@todo: replace with mailchimp code-->
+            <form role="form">
+              <div class="input-group input-group-sm">
+                <label class="sr-only" for="email-field">Email</label>
+                <input type="text" class="form-control" id="email-field" placeholder="Email">
+                <span class="input-group-btn">
+                  <button class="btn btn-primary" type="button">确认</button>
+                </span>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div id="toplink">
+          <a href="#top" class="top-link" title="Back to top">回到顶部
+            <i class="fa fa-chevron-up"></i>
+          </a>
+        </div>
+        <!--@todo: replace with company copyright details-->
+        <div class="subfooter">
+          <div class="col-md-6">
+            <p>Copyright 2014 © 重庆市无损检测学会 渝ICP备:XXXXXX</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<!--Hidden elements - excluded from jPanel Menu on mobile-->
+<div class="hidden-elements jpanel-menu-exclude">
+    <!--@modal - signup modal-->
+    <div class="modal fade" id="signup-modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 class="modal-title">会员注册</h4>
+          </div>
+          <div class="modal-body">
+            <form action="signup.htm" role="form">
+              <h5>注册类型</h5>
+              <select class="form-control">
+                <option>个人会员</option>
+                <option>企业单位</option>
+                <option>理事单位</option>
+              </select>
+              <h5>账号信息</h5>
+              <div class="form-group">
+                <label class="sr-only" for="signup-name">姓名</label>
+                <input type="text" class="form-control" id="signup-name" placeholder="填写姓名">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="signup-username">用户名</label>
+                <input type="text" class="form-control" id="signup-username" placeholder="用户名">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="signup-password">密码</label>
+                <input type="password" class="form-control" id="signup-password" placeholder="账号密码">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="signup-email">邮箱地址</label>
+                <input type="email" class="form-control" id="signup-email" placeholder="电子邮箱">
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" value="term">我已经阅读并接受注册相关条款</label>
+              </div>
+              <button class="btn btn-primary" type="submit">注册</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <small>已经拥有会员账号请点击
+              <a href="login.htm">登陆</a></small>
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <!--@modal - login modal-->
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 class="modal-title">登陆</h4>
+          </div>
+          <div class="modal-body">
+            <form action="login.htm" role="form">
+              <div class="form-group">
+                <label class="sr-only" for="login-email">用户名</label>
+                <input type="text" class="form-control" id="signup-username" placeholder="用户名">
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="login-password">密码</label>
+                <input type="password" id="login-password" class="form-control password" placeholder="账号密码">
+              </div>
+              <button type="button" class="btn btn-primary">登陆</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <small>没有账号请点击
+              <a href="#" class="signup">注册</a>
+            </small>
+            <br>
+            <small>
+              <a href="#">密码找回</a>
+            </small>
+          </div>
+        </div>
+        <!-- /.modal-content -->
+      </div>
+      <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+  </div>
+
+<!--Scripts --> 
+<script src="$static/js/jquery.min.js"></script> 
+<script src="$static/js/jquery-migrate-1.2.1.min.js"></script> <!--Legacy jQuery support for quicksand plugin--> 
+
+<!-- Bootstrap JS --> 
+<script src="$static/js/bootstrap.min.js"></script> 
+
+<!--JS plugins--> 
+<script src="$static/plugins/prism/prism.js"></script> 
+<script src="$static/plugins/slider-revolution/rs-plugin/js/jquery.themepunch.plugins.min.js?v=4.2"></script> 
+<script src="$static/plugins/slider-revolution/rs-plugin/js/jquery.themepunch.revolution.min.js?v=4.2"></script> 
+<script src="$static/plugins/flexslider/jquery.flexslider-min.js"></script> 
+<script src="$static/plugins/clingify/jquery.clingify.min.js"></script> 
+<script src="$static/plugins/jPanelMenu/jquery.jpanelmenu.min.js"></script> 
+<script src="$static/plugins/jRespond/js/jRespond.js"></script> 
+<script src="$static/plugins/quicksand/jquery.quicksand.js"></script> 
+
+<!--Custom scripts mainly used to trigger libraries --> 
+<script src="$static/js/script.min.js"></script>
+</body>
+</html>

@@ -1,5 +1,8 @@
 $def with (article,pages)
 <h1>Article List</h1>
+<form method="GET">
+	<input type="text" name="search"><input type="submit" value="search">
+</form>
 <a href="/admin/article/new">New Article</a>
 <ul>
 $for post in article:
@@ -14,6 +17,9 @@ $for post in article:
 
 	<li>
 		Pages:
+		<a href="/admin/article/page/1"><<</a>
 		$for page in range(1,pages+1):
-		<a href="/admin/article/page/$page">$page</a>
+			<a href="/admin/article/page/$page">$page</a>
+
+		<a href="/admin/article/page/$pages">>></a>
 	</li>
